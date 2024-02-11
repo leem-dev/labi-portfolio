@@ -1,0 +1,39 @@
+.header-container {
+  border: 1px dashed black;
+  height: 9vh;
+  margin: 0rem 6rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  border: 1px dashed red;
+  width: 150px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.header-text span {
+  text-transform: lowercase;
+}
+
+.header-ul {
+  border: 1px dashed red;
+  width: 100%;
+  display: flex;
+}
+
+.header-ul li {
+  list-style: none;
+}
+
+.svg-container {
+  border: 1px dashed red;
+  width: 150px;
+  margin-left: auto;
+  display: flex;
+}
