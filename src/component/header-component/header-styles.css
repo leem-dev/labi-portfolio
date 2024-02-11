@@ -1,39 +1,68 @@
 .header-container {
-  border: 1px dashed black;
-  height: 9vh;
-  margin: 0rem 6rem;
+  height: 8vh;
+  margin: 0rem 10rem;
+  background: #c9d8d7;
 
   display: flex;
   align-items: center;
 }
 
+.header-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .header-text {
-  border: 1px dashed red;
   width: 150px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 30px;
   text-transform: uppercase;
+  color: #812424;
 }
 
 .header-text span {
   text-transform: lowercase;
+  color: #f5ecda;
 }
 
 .header-ul {
-  border: 1px dashed red;
+  margin: 0rem 3rem;
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .header-ul li {
   list-style: none;
+  text-transform: uppercase;
+}
+
+.header-ul li a {
+  font-family: "Karla", sans-serif;
+
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #707174;
+}
+
+.header-ul li a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .svg-container {
-  border: 1px dashed red;
   width: 150px;
   margin-left: auto;
+  padding: 0px 10px;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.svg:hover {
+  transform: rotate(30deg);
+  transition: all ease-in-out 1s;
 }

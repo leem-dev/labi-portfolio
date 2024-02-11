@@ -5,7 +5,8 @@ import { ReactComponent as LinkedinSvg } from "../../assests/svgLink.svg";
 const ShowPage = () => {
   const svg = {
     width: "30px",
-    height: "30px",
+    height: "34px",
+    cursor: "pointer",
   };
 
   const handleGithubClick = () => {
@@ -18,10 +19,10 @@ const ShowPage = () => {
 
   return (
     <div className="svg-container">
-      <div className="github-svg" onClick={handleGithubClick}>
+      <div className="svg " onClick={handleGithubClick}>
         <GithubSvg style={svg} />
       </div>
-      <div className="linkedin-svg" onClick={handleLinkedinClick}>
+      <div className="svg" onClick={handleLinkedinClick}>
         <LinkedinSvg style={svg} />
       </div>
     </div>

@@ -6,9 +6,12 @@ import "./header-styles.css";
 const Header = () => {
   return (
     <div className="header-container">
-      <p className="header-text">
-        la<span>bi</span>
-      </p>
+      <a href="/" className="header-link">
+        <p className="header-text">
+          la<span>bi</span>
+        </p>
+      </a>
+
       <ul className="header-ul">
         <li>
           <a href="#about">About</a>
