@@ -1,6 +1,7 @@
 import React from "react";
 import DevText from "./typing-component";
 import AboutFolder from "./about-main-component";
+import ProjectFolder from "./project-section/project-main-component";
 import Leem from "../../assests/leem.jpg";
 
 import "./main-styles.css";
@@ -15,6 +16,7 @@ const Main = () => {
         <DevText />
       </section>
       <AboutFolder />
+      <ProjectFolder />
     </div>
   );
 };

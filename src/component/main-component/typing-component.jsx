@@ -5,7 +5,7 @@ const DevText = () => {
   const mySentence = [
     "Hello,",
     "I'm",
-    "Labi",
+    "Seleem",
     "a",
     "dedicated",
     "software",
