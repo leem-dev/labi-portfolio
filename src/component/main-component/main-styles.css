@@ -100,10 +100,3 @@
   letter-spacing: 1px;
   line-height: 1.4;
 }
-
-/* PROJECT FOLDER */
-.project-container {
-  border: 1px dashed red;
-  height: 60vh;
-  margin-bottom: 100px;
-}

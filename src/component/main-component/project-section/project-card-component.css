@@ -1,0 +1,35 @@
+/* PROJECT FOLDER */
+.project-container {
+  height: 60vh;
+  margin-bottom: 100px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.project-box {
+  border: 1px dashed red;
+
+  background: #c9d8d7;
+  height: 70vh;
+}
+
+.project-card-description {
+  padding: 10px 20px;
+}
+
+.project-card-description h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.project-card-img {
+  object-fit: contain;
+  object-position: top;
+  width: 100%;
+  cursor: pointer;
+}
