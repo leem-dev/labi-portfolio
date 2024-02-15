@@ -2,8 +2,9 @@ import React from "react";
 import DevText from "./typing-component";
 import AboutFolder from "./about-main-component";
 import ProjectFolder from "./project-section/project-main-component";
-import Leem from "../../assests/leem.jpg";
+import ContactMe from "./contact-main-component/contact-component";
 
+import Leem from "../../assests/leem.jpg";
 import "./main-styles.css";
 
 const Main = () => {
@@ -13,7 +14,7 @@ const Main = () => {
       title: "Little Lemon",
       img: require("../../assests/little-lemon.jpg"),
       description:
-        "Little Lemon, We are a family owned Medditerranean restaurant, focused on traditional recipes served with a modern twist. ",
+        "We are a family owned Medditerranean restaurant, focused on traditional recipes served with a modern twist. ",
       link: "https://little-lemon-restuarant-gold.vercel.app/",
       tool: "ReactJS, NPM, JEST, CSS",
     },
@@ -22,7 +23,7 @@ const Main = () => {
       title: "Dashboard",
       img: require("../../assests/dashboard.jpg"),
       description:
-        "A single-page dashboard is a concise and focused display of key metrics, data, or information relevant to a specific purpose or goal. It's designed to provide users with a quick overview of important insights without requiring them to navigate through multiple pages or interfaces.",
+        "A single-page dashboard presents essential metrics, data, or information pertinent to a particular objective in a clear and concentrated manner. ",
       link: "https://dashboard-leem-dev.vercel.app/",
       tool: "ReactJS, NPM, CSS",
     },
@@ -31,7 +32,7 @@ const Main = () => {
       title: "Guess Game",
       img: require("../../assests/Guess-game.jpg"),
       description:
-        "lifespan is 3, Guess from 1 - 30, it informs you about the trials left, it renders your input and the comp- chice, the SUBMIT button checks for inputLength, if its lesser than 1, it gives nothing. the CLEAR button clears the inputText and compText NOT the trialCount",
+        "Lifespan is 3, Guess from 1 - 30, it informs you about the trials left, it renders your input and the comp- chice, the SUBMIT button checks for inputLength",
       link: "https://guess-game-reactjs.vercel.app/",
       tool: "ReactJS, NPM, CSS",
     },
@@ -47,6 +48,7 @@ const Main = () => {
       </section>
       <AboutFolder />
       <ProjectFolder projects={projects} />
+      <ContactMe />
     </div>
   );
 };

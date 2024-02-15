@@ -18,13 +18,15 @@ const Project = ({ title, img, description, link, tool }) => {
       />
       <div className="project-card-description">
         <h3>{title}</h3>
-        <p>{showMore ? description : description.substring(0, 100)}</p>
+        <p className="description-text">
+          {showMore ? description : description.substring(0, 100)}
+        </p>
         {description.length > 100 && (
-          <button onClick={toggleDescription}>
-            {showMore ? "Read less" : "Read more"}
-          </button>
+          <p className="show-more-text" onClick={toggleDescription}>
+            {showMore ? "Read less..." : "Read more..."}
+          </p>
         )}
-        <p>{tool}</p>
+        <p className="tool-text">{tool}</p>
       </div>
     </div>
   );

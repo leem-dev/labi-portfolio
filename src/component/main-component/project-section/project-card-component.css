@@ -1,22 +1,36 @@
 /* PROJECT FOLDER */
 .project-container {
-  height: 60vh;
-  margin-bottom: 100px;
+  height: 150vh;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 30px;
 }
 
 .project-box {
-  border: 1px dashed red;
+  /* background: #c9d8d7; */
+  background: linear-gradient(to bottom, black, gray);
 
-  background: #c9d8d7;
   height: 70vh;
+  border-radius: 10px;
+
+  animation: slideInFromRight 0.55s ease-in-out;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .project-card-description {
   padding: 10px 20px;
+  color: white;
 }
 
 .project-card-description h3 {
@@ -28,8 +42,35 @@
 }
 
 .project-card-img {
-  object-fit: contain;
-  object-position: top;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  object-fit: cover;
+  object-position: center;
   width: 100%;
+  height: 300px;
   cursor: pointer;
+}
+
+.tool-text,
+.description-text,
+.show-more-text {
+  font-family: "Carlito", sans-serif;
+  font-weight: 500;
+}
+
+.description-text {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.show-more-text {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.tool-text {
+  margin-top: 10px;
+  font-size: 20px;
 }
