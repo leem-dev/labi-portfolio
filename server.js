@@ -28,7 +28,6 @@ const transporter = nodemailer.createTransport({
     user: email,
     pass: password,
   },
-  authMethod: "PLAIN",
 });
 
 // POST route for handling form submission
