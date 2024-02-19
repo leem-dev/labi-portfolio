@@ -1,6 +1,5 @@
-// import { ReactComponent as Arrowright } from "../../assests/arrow-right.svg";
-import { useState, useEffect } from "react";
-import React from "react";
+import { useState } from "react";
+import "./main-styles.css";
 
 const AboutFolder = () => {
   const aboutMe = [
@@ -16,27 +15,14 @@ const AboutFolder = () => {
     },
   ];
 
-  const [showFirst, setShowFirst] = useState(true);
-  const [showSecond, setShowSecond] = useState(false);
-  const [timer, setTimer] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimer((prevTimer) => prevTimer + 1);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
+  const [scrollUp, setScrollUp] = useState(false);
 
   const handleMouseEnter = () => {
-    setTimer(0); // Reset the timer
-    setShowFirst(false);
-    setShowSecond(true);
+    setScrollUp(true);
   };
 
   const handleMouseLeave = () => {
-    setTimer(0); // Reset the timer
-    setShowFirst(true);
-    setShowSecond(false);
+    setScrollUp(false);
   };
 
   return (
@@ -47,12 +33,7 @@ const AboutFolder = () => {
     >
       <h3 id="about">About Me</h3>
       <div className="about-details">
-        <div className={`paragraph ${showFirst ? "show" : "hide"}`}>
-          {aboutMe.map((paragraph) => (
-            <p key={paragraph.id}>{paragraph.content}</p>
-          ))}
-        </div>
-        <div className={`paragraph ${showSecond ? "show" : "hide"}`}>
+        <div className={`paragraph ${scrollUp ? "scroll-up" : ""}`}>
           {aboutMe.map((paragraph) => (
             <p key={paragraph.id}>{paragraph.content}</p>
           ))}

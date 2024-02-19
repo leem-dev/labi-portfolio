@@ -65,6 +65,9 @@
   margin: 3rem 0rem;
   padding: 0rem 3rem;
   border-radius: 10px;
+
+  position: relative;
+  overflow: hidden;
 }
 
 .about-container h3 {
@@ -78,44 +81,50 @@
 .about-details {
   color: black;
   height: 200px;
-  overflow: auto;
+  overflow: hidden;
 }
-
-/* .about-parag {
-  background: #c9d8d7;
-
-  display: flex;
-} */
 
 .about-details p {
   background: #c9d8d7;
   padding: 10px;
+  height: 20vh;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-left: 6px;
   margin-bottom: 20px;
-  font-size: 17px;
+  font-size: 20px;
   font-family: "Carlito", sans-serif;
   letter-spacing: 1px;
   line-height: 1.4;
 }
 
 .paragraph {
-  max-height: 100%;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
-}
-
-.hide {
-  max-height: 0;
+  transition: transform 2s ease;
 }
 
 .show {
-  max-height: 200px; /* Adjust based on your content height */
+  transform: translateY(0);
+}
+
+.hide {
+  transform: translateY(-100%);
+}
+
+.scroll-up {
+  animation: scrollUpAnimation 10s linear infinite;
+}
+
+@keyframes scrollUpAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 /* Animation */
-@keyframes slideInFromTop {
+/* @keyframes slideInFromTop {
   from {
     transform: translateY(-100%);
   }
@@ -139,7 +148,7 @@
 
 .paragraph.hide {
   animation: slideInFromBottom 0.5s ease-in-out;
-}
+} */
 
 /* MOBILE RESPONSIVENESS */
 
