@@ -3,9 +3,9 @@ import Project from "./project-showmore";
 
 const ProjectFolder = ({ projects }) => {
   return (
-    <div id="project" className="project-container">
-      <h3>Project</h3>
-      <div>
+    <div id="project" className="project">
+      <h3>Projects</h3>
+      <div className="project-container">
         {projects.map((project) => (
           <Project
             key={project.id}
