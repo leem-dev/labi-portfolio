@@ -112,3 +112,11 @@
     gap: 60px;
   }
 }
+
+@media (min-width: 1024px) {
+  .project-container {
+    display: flex;
+
+    overflow-y: auto;
+  }
+}

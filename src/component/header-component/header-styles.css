@@ -5,15 +5,11 @@
 .header-container {
   height: 8vh;
   margin: 0rem 15rem;
-  border: 1px dashed red;
-  /* padding: 0rem 40px; */
   display: flex;
   align-items: center;
 }
 
 .header-link {
-  border: 1px dashed red;
-
   text-decoration: none;
   cursor: pointer;
 }
@@ -34,9 +30,8 @@
 }
 
 .header-ul {
-  border: 1px dashed red;
-
-  /* margin: 0rem 3rem; */
+  /* margin: 0rem 8rem; */
+  padding: 0rem 3rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -50,7 +45,7 @@
 .header-ul li a {
   font-family: "Karla", sans-serif;
 
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
   text-decoration: none;
   color: #707174;
@@ -62,9 +57,7 @@
 }
 
 .svg-container {
-  border: 1px dashed red;
-
-  width: 150px;
+  width: 300px;
   margin-left: auto;
   padding: 0px 2px;
   display: flex;
@@ -72,16 +65,51 @@
   align-items: center;
 }
 
+.svg {
+  position: relative;
+}
+
 .svg:hover {
-  transform: rotate(30deg);
   transition: all ease-in-out 1s;
+}
+
+.svg-file {
+  background: #c9d8d7;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  padding: 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.svg:hover .svg-file {
+  opacity: 1;
+}
+
+.github {
+  position: absolute;
+  bottom: -40px;
+  left: -130px;
+}
+
+.linkedin {
+  position: absolute;
+  bottom: -50px;
+  left: -90px;
+}
+
+.gmail {
+  position: absolute;
+  bottom: -60px;
+  left: -70px;
 }
 
 /* MOBILE RESPONSIVENESS */
 
 @media (max-width: 575.98px) {
   .header-container {
-    /* padding: 0rem 1rem; */
+    margin: 0rem 2rem;
   }
 
   .header-ul {
@@ -91,11 +119,15 @@
 
 @media (min-width: 768px) {
   .header-container {
-    /* padding: 0rem 3rem; */
+    margin: 0rem 3rem;
+  }
+
+  .header-ul {
+    margin: 0rem 3rem;
   }
 
   .header-ul li a {
-    font-size: 17px;
+    /* font-size: 17px; */
   }
 }
 
@@ -105,7 +137,7 @@
   }
 
   .header-ul li a {
-    font-size: 19px;
+    font-size: 21px;
   }
 }
 

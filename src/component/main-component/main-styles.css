@@ -175,19 +175,24 @@
 
 @media (min-width: 1024px) {
   .main-container {
-    margin: 0rem 10rem;
-  }
-
-  .typing-container p {
     margin: 0rem 4rem;
   }
 
+  .typing-container p {
+    margin: 0rem 5rem;
+    font-size: 22px;
+  }
+
   .about-container {
-    height: 40vh;
+    height: 42vh;
   }
 
   .about-details p {
-    height: 23vh;
+    height: 25vh;
     font-size: 19px;
+  }
+
+  .scroll-up {
+    transform: translateY(-200px);
   }
 }

@@ -31,12 +31,15 @@ const ShowPage = () => {
     <div className="svg-container">
       <div className="svg " onClick={handleGithubClick}>
         <GithubSvg style={svg} />
+        <p className="github svg-file">View my previous project</p>
       </div>
       <div className="svg" onClick={handleLinkedinClick}>
         <LinkedinSvg style={svg} />
+        <p className="linkedin svg-file">Read more about me</p>
       </div>
       <div className="svg" onClick={handleGmailClick}>
         <GmailSvg style={svg} />
+        <p className="gmail svg-file">Send me a mail</p>
       </div>
     </div>
   );
