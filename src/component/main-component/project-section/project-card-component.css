@@ -15,18 +15,24 @@
 }
 
 .project-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; */
+
+  display: flex;
+  gap: 45px;
+
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .project-box {
-  /* background: #c9d8d7; */
   background: linear-gradient(to bottom, black, gray);
 
   height: 70vh;
   border-radius: 10px;
-
+  width: 400px;
+  flex-shrink: 0;
   animation: slideInFromRight 0.55s ease-in-out;
 }
 
@@ -94,29 +100,22 @@
   }
 
   .project-container {
-    margin: 0rem;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
   }
 
   .project-box {
     height: 75vh;
+    width: 320px;
   }
 }
 
 @media (min-width: 768px) {
-  .project-container {
+  /* .project-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-  }
+  } */
 }
 
 @media (min-width: 1024px) {
-  .project-container {
-    display: flex;
-
-    overflow-y: auto;
-  }
 }

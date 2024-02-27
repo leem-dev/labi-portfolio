@@ -1,8 +1,10 @@
+import ShowPage from "./header-component/showPage-component";
+
 const Footer = () => {
   return (
     <>
       <div></div>
-      <div></div>
+      <ShowPage />
     </>
   );
 };
