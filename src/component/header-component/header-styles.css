@@ -1,6 +1,6 @@
 #header {
   background: #c9d8d7;
-  padding: 0rem 10rem;
+  padding: 0rem 13rem;
 }
 
 .header-container {
@@ -31,7 +31,7 @@
 }
 
 .header-ul {
-  margin: 0rem 2rem;
+  margin: 0rem 6rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -67,6 +67,12 @@
 
 .svg {
   position: relative;
+}
+
+.svg-icon {
+  width: "30px";
+  height: "34px";
+  cursor: "pointer";
 }
 
 .svg:hover {
@@ -136,5 +142,15 @@
 
   .header-ul li a {
     font-size: 19px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #header {
+    padding: 0rem 10rem;
+  }
+
+  .header-ul {
+    margin: 0rem 6rem;
   }
 }

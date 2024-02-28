@@ -5,8 +5,8 @@ import { ReactComponent as GmailSvg } from "../../assests/gmail-icon.svg";
 
 const ShowPage = () => {
   const svg = {
-    width: "30px",
-    height: "34px",
+    width: "28px",
+    height: "32px",
     cursor: "pointer",
   };
 

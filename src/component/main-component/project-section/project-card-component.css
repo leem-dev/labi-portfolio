@@ -100,21 +100,20 @@
   }
 
   .project-container {
-    gap: 20px;
+    gap: 25px;
   }
 
   .project-box {
-    height: 75vh;
+    height: 73vh;
     width: 320px;
   }
 }
 
 @media (min-width: 768px) {
-  /* .project-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-  } */
+  .project-box {
+    width: 350px;
+    height: 73vh;
+  }
 }
 
 @media (min-width: 1024px) {

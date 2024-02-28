@@ -1,5 +1,7 @@
 .main-container {
   margin: 0rem 13rem;
+
+  margin-bottom: 2rem;
 }
 
 .dev-section {
@@ -72,7 +74,7 @@
 
 .about-details {
   color: black;
-  height: 200px;
+  height: 30vh;
   overflow: hidden;
 }
 
@@ -159,12 +161,12 @@
     margin: 0rem 4rem;
   }
   .about-container {
-    height: 40vh;
+    height: 45vh;
   }
 
   .about-details p {
     height: 25vh;
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .scroll-up {
@@ -174,21 +176,21 @@
 
 @media (min-width: 1024px) {
   .main-container {
-    margin: 0rem 4rem;
+    margin: 0rem 10rem;
   }
 
   .typing-container p {
     margin: 0rem 5rem;
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .about-container {
-    height: 42vh;
+    height: 45vh;
   }
 
   .about-details p {
-    height: 25vh;
-    font-size: 23px;
+    height: 22vh;
+    font-size: 22px;
   }
 
   .scroll-up {
