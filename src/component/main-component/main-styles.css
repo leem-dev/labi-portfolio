@@ -60,7 +60,7 @@
 .about-container {
   background: linear-gradient(to bottom, black, gray);
   color: white;
-  height: 40vh;
+  height: 50vh;
   padding: 0rem 3rem;
 }
 
@@ -74,7 +74,8 @@
 
 .about-details {
   color: black;
-  height: 40vh;
+  height: 35vh;
+
   overflow: hidden;
 }
 
@@ -184,9 +185,9 @@
     margin-bottom: 10px;
   }
 
-  .about-details {
+  /* .about-details {
     height: 60vh;
-  }
+  } */
 
   .about-details p {
     font-size: 19px;

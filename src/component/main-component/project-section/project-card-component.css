@@ -15,10 +15,6 @@
 }
 
 .project-container {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px; */
-
   display: flex;
   gap: 45px;
 
@@ -29,7 +25,7 @@
 .project-box {
   background: linear-gradient(to bottom, black, gray);
 
-  height: 70vh;
+  height: 60vh;
   border-radius: 10px;
   width: 400px;
   flex-shrink: 0;

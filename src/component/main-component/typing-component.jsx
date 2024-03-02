@@ -26,8 +26,8 @@ const DevText = () => {
     "experiences.",
   ];
 
-  const typingSpeed = 100;
-  const delayEachWord = 500;
+  const typingSpeed = 50;
+  const delayEachWord = 300;
 
   useEffect(() => {
     let index = 0;
