@@ -3,12 +3,12 @@ import "./footer-styles.css";
 
 const Footer = () => {
   return (
-    <>
+    <div id="footer">
       <div className="footer-container">
         <p>Copyright by LaBi</p>
         <ShowPage />
       </div>
-    </>
+    </div>
   );
 };
 
