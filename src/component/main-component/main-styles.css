@@ -5,7 +5,7 @@
 }
 
 .dev-section {
-  height: 80vh;
+  height: 90vh;
   background: #b4b5b8;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,6 @@
 .about-details p {
   background: #c9d8d7;
   padding: 10px;
-  /* height: 16vh; */
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-left: 6px;
@@ -136,10 +135,6 @@
     font-size: 27px;
     margin-bottom: 10px;
   }
-
-  /* .about-details {
-    height: 70vh;
-  } */
 
   .about-details p {
     font-size: 17px;

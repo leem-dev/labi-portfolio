@@ -1,12 +1,12 @@
 #footer {
-  border: 1px dashed red;
-  margin-bottom: auto;
+  background: #3d3d3d;
+  padding: 0rem 10rem;
 }
 
 .footer-container {
-  background: #c9d8d7;
-  height: 7vh;
-
+  height: 5vh;
+  padding: 1rem 0rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }

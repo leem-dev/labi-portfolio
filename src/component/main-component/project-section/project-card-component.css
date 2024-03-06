@@ -17,15 +17,14 @@
 .project-container {
   display: flex;
   gap: 45px;
-
+  padding: 1rem;
   overflow-x: auto;
-  max-width: 100%;
 }
 
 .project-box {
   background: linear-gradient(to bottom, black, gray);
 
-  height: 60vh;
+  height: 100%;
   border-radius: 10px;
   width: 400px;
   flex-shrink: 0;
@@ -96,19 +95,20 @@
   }
 
   .project-container {
+    border: 1px dashed red;
     gap: 25px;
   }
 
   .project-box {
-    height: 73vh;
     width: 350px;
+    height: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .project-box {
     width: 350px;
-    height: 73vh;
+    height: 100%;
   }
 }
 

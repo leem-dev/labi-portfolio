@@ -19,7 +19,7 @@ const Project = ({ title, img, description, link, tool }) => {
       <div className="project-card-description">
         <h3>{title}</h3>
         <p className="description-text">
-          {showMore ? description : description.substring(0, 100)}
+          {showMore ? description : description.substring(0, 55)}
         </p>
         {description.length > 100 && (
           <p className="show-more-text" onClick={toggleDescription}>

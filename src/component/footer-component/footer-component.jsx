@@ -1,12 +1,11 @@
-import ShowPage from "../header-component/showPage-component";
+import Logo from "../header-component/logo-component";
 import "./footer-styles.css";
 
 const Footer = () => {
   return (
     <div id="footer">
       <div className="footer-container">
-        <p>Copyright by LaBi</p>
-        <ShowPage />
+        <Logo />
       </div>
     </div>
   );
