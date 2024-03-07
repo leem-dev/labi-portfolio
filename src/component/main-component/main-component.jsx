@@ -19,6 +19,15 @@ const Main = () => {
     },
     {
       id: 2,
+      title: "Lead Tracker",
+      img: require("../../assests/lead-tracker.png"),
+      description:
+        "A Google Chrome extension crafted to transform how you manage leads. Effortlessly organize and monitor your leads right from your browser, simplifying your workflow and boosting productivity.",
+      link: "https://github.com/leem-dev/Functioning-Lead-Tracker-Chrome-",
+      tool: "JavaScript, CSS, HTML",
+    },
+    {
+      id: 3,
       title: "Dashboard",
       img: require("../../assests/dashboard.jpg"),
       description:
@@ -27,7 +36,7 @@ const Main = () => {
       tool: "ReactJS, NPM, CSS",
     },
     {
-      id: 3,
+      id: 4,
       title: "Guess Game",
       img: require("../../assests/Guess-game.jpg"),
       description:
