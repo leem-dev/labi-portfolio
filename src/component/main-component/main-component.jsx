@@ -37,6 +37,15 @@ const Main = () => {
     },
     {
       id: 4,
+      title: "Password Generator",
+
+      description:
+        "This project will allow users to generate random passwords with customizable length and options for including uppercase letters, lowercase letters, numbers, and special characters.",
+
+      tool: "ReactJS, NPM, CSS",
+    },
+    {
+      id: 5,
       title: "Guess Game",
       img: require("../../assests/Guess-game.jpg"),
       description:
