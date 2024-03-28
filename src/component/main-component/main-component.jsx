@@ -38,7 +38,7 @@ const Main = () => {
     {
       id: 4,
       title: "Password Generator",
-      img: require("../../assests/"),
+      img: require("../../assests/password-gen.jpg"),
       description:
         "This project will allow users to generate random passwords with customizable length and options for including uppercase letters, lowercase letters, numbers, and special characters.",
       link: "https://password-generator-lemon-two.vercel.app/",

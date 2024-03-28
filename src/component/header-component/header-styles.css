@@ -67,6 +67,7 @@
 
 .svg {
   position: relative;
+  pointer-events: none;
 }
 
 .svg-icon {
